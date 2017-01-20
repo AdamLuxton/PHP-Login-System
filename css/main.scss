@@ -1,0 +1,92 @@
+$red: #ff6969;
+$darkgrey: #1c1b1b;
+$blue: rgb(91, 222, 167);
+$lightblue:#bce7f4;
+
+
+body, html{
+  height: 100%;
+}
+
+body{
+  //padding-top: 70px;
+  background: $darkgrey;
+}
+
+.hidden{
+  display: none;
+}
+
+.mainContainer{
+  background-image: url(../images/bg0.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.centering{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#loginHeader{
+  background-color: $blue;
+  padding: 20px 20px 0px 20px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  text-align: center;
+  h1{
+    margin: 0 0 20px 0;
+    color: #FFF;
+    font-size: 1.5em;
+  }
+}
+
+#loginContainer{
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.error{
+  color:rgb(242, 111, 85);
+}
+
+#username{
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#password{
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  margin-bottom: 10px;
+}
+
+#pwForget{
+  color: darken($blue, 30%);
+    &:link,&:visited{
+      color: darken($blue, 30%);
+      text-decoration: none;
+    }
+    &:hover{
+      color: $blue;
+      text-decoration: none;
+    }
+    &:active{
+      color: darken($blue, 30%);
+      text-decoration: none;
+    }
+}
+
+#logBtn{
+  width: 100%;
+  margin-top: 10px;
+}
