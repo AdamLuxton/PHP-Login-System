@@ -10,10 +10,9 @@ date_default_timezone_set('America/Toronto');
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
     <title>Welcom <?php echo $_SESSION['users_name']; ?></title>
     <link rel="stylesheet" href="css/app.css">
