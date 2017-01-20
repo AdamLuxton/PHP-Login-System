@@ -3,7 +3,7 @@
 	$user = "root";
 	$pass = "";
 	$url = "localhost";
-	$db = "db_bluray";
+	$db = "db_login";
 
 	$link = mysqli_connect($url, $user, $pass, $db); //Mac
 	//$link = mysqli_connect($url, $user, $pass, $db); //PC
