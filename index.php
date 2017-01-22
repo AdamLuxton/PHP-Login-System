@@ -10,10 +10,9 @@ date_default_timezone_set('America/Toronto');
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
     <title>Welcom <?php echo $_SESSION['users_name']; ?></title>
     <link rel="stylesheet" href="css/app.css">
@@ -63,7 +62,7 @@ date_default_timezone_set('America/Toronto');
         <div class="row">
           <div id="loginContainer" class="col-xs-10 col-xs-push-1 col-sm-6 col-md-4 col-md-push-4 col-sm-push-3">
             <?php
-            echo "Your last log-in was on the ".$_SESSION['users_login'];
+            echo "<p>Your last log-in was on the ".$_SESSION['users_login'].".</p>";
             //echo date("jS \\of F, Y");
             //echo idate('H');
             //echo "UPDATE tbl_user SET user_lastLogin='".date("j/n/y")."' WHERE user_id=0";

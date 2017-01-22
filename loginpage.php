@@ -67,7 +67,7 @@
         <div class="row">
           <div id="loginContainer" class="col-xs-10 col-xs-push-1 col-sm-6 col-md-4 col-md-push-4 col-sm-push-3">
             <h1 class="hidden">SIGN-IN</h1>
-            <?php if(!empty($message)){echo "<span class='error'>".$message."</span>";} ?>
+            <?php if(!empty($message)){echo "<p class='error'>".$message."</p>";} ?>
             <form action="loginpage.php" method="post">
                 <label for="username" class="hidden">Username:</label>
                 <input type="username" name="username" placeholder="Enter Your Username" class="form-control" id="username">
