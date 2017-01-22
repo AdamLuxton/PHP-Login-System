@@ -41,7 +41,7 @@
         $accountAttempted = mysqli_query($link, $accountString);
         if(mysqli_num_rows($accountAttempted)){
           $found_user = mysqli_fetch_array($accountAttempted, MYSQLI_ASSOC);
-          if ($found_user["login_count"]<3){
+          if ($found_user["login_count"]<10){
             $count = $found_user["login_count"]+1;
             $loginID = $found_user["login_id"];
             $query = "UPDATE `tbl_logina` SET `login_count` = {$count} WHERE `tbl_logina`.`login_id` = {$loginID}";
@@ -52,7 +52,7 @@
           else{
             $query = "UPDATE `tbl_users` SET `user_status` = 0 WHERE `user_name` = '{$username}'";
             mysqli_query($link, $query);
-            $message = "This account has been locked out after too many failed log-in attempts. Check your email for instructions on how to unlock your account.";
+            $message = "This account has been locked from too many log-in attempts. Check your email for instructions on unlocking your account.";
             return $message;
           }
         }

@@ -62,7 +62,7 @@ date_default_timezone_set('America/Toronto');
         <div class="row">
           <div id="loginContainer" class="col-xs-10 col-xs-push-1 col-sm-6 col-md-4 col-md-push-4 col-sm-push-3">
             <?php
-            echo "Your last log-in was on the ".$_SESSION['users_login'];
+            echo "<p>Your last log-in was on the ".$_SESSION['users_login'].".</p>";
             //echo date("jS \\of F, Y");
             //echo idate('H');
             //echo "UPDATE tbl_user SET user_lastLogin='".date("j/n/y")."' WHERE user_id=0";
