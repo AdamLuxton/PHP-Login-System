@@ -7,7 +7,7 @@ function confirm_logged_in(){
   }
 }
 
-function confirm_logged_out(){
+function confirm_logged_out(){ //Redirect from the login page if logged in already.
   if(isset($_SESSION['users_id'])){
     redirect_to("index.php");
   }

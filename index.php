@@ -1,7 +1,7 @@
 <?php
 require_once("admin/phpscripts/init.php");
 confirm_logged_in();
-date_default_timezone_set('America/Toronto');
+date_default_timezone_set('America/Toronto'); //Set the timezone for the date function.
 ?>
 
 <!DOCTYPE html>
@@ -14,30 +14,11 @@ date_default_timezone_set('America/Toronto');
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Welcom <?php echo $_SESSION['users_name']; ?></title>
+    <title>Welcome <?php echo $_SESSION['users_name']; ?></title>
     <link rel="stylesheet" href="css/app.css">
   </head>
 
   <body>
-
-  <!--  <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">LEARN THE HEROES</a></li>
-            <li><a href="#">LEARN THE ITEMS</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>-->
   <div class="mainContainer">
     <div class="centering">
       <div class="container">
@@ -46,13 +27,13 @@ date_default_timezone_set('America/Toronto');
             <h1>
               <?php
                 $hour = idate('H');
-                if(($hour>4)&&($hour<12)){
+                if(($hour>4)&&($hour<12)){ //If its the morning.
                   echo "GOOD MORNING ".strtoupper($_SESSION['users_name']);
                 }
-                else if(($hour>=12)&&($hour<18)){
+                else if(($hour>=12)&&($hour<18)){ //If its the afternoon.
                   echo "GOOD AFTERNOON ".strtoupper($_SESSION['users_name']);
                 }
-                else{
+                else{ //If its the evening.
                   echo "GOOD EVENING ".strtoupper($_SESSION['users_name']);
                 }
               ?>
