@@ -1,0 +1,10 @@
+Here are the tutorials I used for this assignment.
+
+1. http://stackoverflow.com/questions/6585649/php-forgot-password-function
+I used this to organize my thoughts on how to do the unlock functionality, namely to get the idea of using a email with a token.
+
+2. http://thisinterestsme.com/generating-random-token-php/
+I used this link to learn the function for generating a random string for the token in PHP.
+
+3. http://php.net/manual/en/function.date.php, http://php.net/manual/en/function.idate.php, http://php.net/manual/en/timezones.php
+Syntax documentation for the date function for both the time of day functionality and the last login.
